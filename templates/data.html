@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}    
+      <div class="container"> 
+        <h1>Hellometer Data</h1>
+        <ul>
+        <p>
+          {% for customer in customers %}
+
+            {% if customer == "2" %}
+              <li>2 is the best!</li>
+            {% else %}
+              <li>{{ customer }}</li>
+            {% endif %}
+          {% endfor %}
+        </p>
+        </ul>
+      </div>
+{% endblock %}

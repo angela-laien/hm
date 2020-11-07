@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h1>Thank you for your patience!</h1>
+        <!-- <small>Please Confirm Your Information</small> -->
+        <br/><br/>
+        <!-- {{ email_address }}
+        <br/><br/>
+        {{ details }} -->
+        <ul>
+        {% for query in queries %}
+            <li>{{ query }}</li>
+        {% endfor %}
+        </ul>
+    </div>
+{% endblock %}
